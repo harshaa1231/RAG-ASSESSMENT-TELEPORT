@@ -9,7 +9,8 @@
 A working AI retrieval system that compares two search strategies on Google Cloud
 documentation. It runs entirely on your laptop — no cloud account, no API keys needed.
 
-When it finishes it produces two files:
+When it finishes it produces three files:
+- **`dashboard.html`** — interactive results dashboard, open in any browser (no internet needed)
 - **`retrieval_benchmark.md`** — human-readable report (open in any text editor or VS Code)
 - **`benchmark_results.json`** — raw metrics data
 
@@ -57,45 +58,105 @@ For example: `Desktop/rag-benchmark/`
 
 ## Step 2 — Run It
 
-### On Windows
+Pick whichever method suits you best — they all produce the same output.
 
-1. Open the extracted `rag-benchmark` folder
-2. **Double-click `run.bat`**
-3. A window opens — this is normal. Let it run.
-4. **First run downloads the AI model (~1.4 GB)** — this takes a few minutes depending
-   on your internet speed. Every run after that is fast.
-5. When done, the window shows `[OK] benchmark_results.json` and `[OK] retrieval_benchmark.md`
+---
 
-> If Windows says "Windows protected your PC", click **More info** → **Run anyway**.
-> This happens because the script is not code-signed.
+### Option A: One-click scripts (simplest)
 
-### On Mac / Linux
+**Windows** — double-click `run.bat`, or from Command Prompt:
+```cmd
+cd Desktop\rag-benchmark
+run.bat
+```
 
-1. Open Terminal
-2. Navigate to the extracted folder:
-   ```
-   cd ~/Desktop/rag-benchmark
-   ```
-3. Run:
-   ```
-   chmod +x run.sh && ./run.sh
-   ```
-4. **First run downloads the AI model (~1.4 GB)** — a few minutes on first run.
-5. When done you'll see `[OK] benchmark_results.json` and `[OK] retrieval_benchmark.md`
+**Mac / Linux** — from Terminal:
+```bash
+cd ~/Desktop/rag-benchmark
+chmod +x run.sh && ./run.sh
+```
+
+> **First run downloads the AI model (~1.4 GB)** — takes a few minutes on first run.
+> Every run after that is fast (~60 seconds).
+
+When finished you will see:
+```
+[OK] benchmark_results.json
+[OK] retrieval_benchmark.md
+[OK] dashboard.html  ← open in any browser, no server needed
+```
+
+---
+
+### Option B: Terminal step-by-step (Python 3.10+)
+
+If you prefer to run each step manually from the terminal:
+
+**Mac / Linux:**
+```bash
+# 1. Go to the project folder
+cd ~/Desktop/rag-benchmark
+
+# 2. Create a virtual environment
+python3 -m venv .venv
+
+# 3. Activate it
+source .venv/bin/activate
+
+# 4. Install dependencies
+pip install -r requirements.txt
+
+# 5. Run the benchmark
+python -m benchmark.runner
+```
+
+**Windows (Command Prompt):**
+```cmd
+cd Desktop\rag-benchmark
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python -m benchmark.runner
+```
+
+> Steps 2–4 only need to be done once. Next time, just activate the venv (step 3)
+> and run the benchmark (step 5).
+
+---
+
+### Option C: Docker (any OS, no Python install needed)
+
+```bash
+docker compose build
+docker compose run --rm rag-benchmark
+```
 
 ---
 
 ## Step 3 — View the Results
 
-After the run completes, open these files in the same folder:
+After the run completes, three files appear in the project folder:
 
 | File | How to open |
 |------|-------------|
+| `dashboard.html` | **Double-click** — opens in your browser instantly, no internet needed |
 | `retrieval_benchmark.md` | VS Code, Notepad, TextEdit, or any text editor |
 | `benchmark_results.json` | VS Code, Notepad, or any text editor |
 
-The markdown file is the main report. It shows how Strategy A (raw search) compares
-to Strategy B (AI-enhanced search) across 5 queries.
+**The dashboard is the easiest way to see results.** It shows charts comparing
+Strategy A vs Strategy B across all 5 queries with colour-coded relevance scores.
+
+To open the dashboard from the terminal:
+```bash
+# Mac
+open dashboard.html
+
+# Windows
+start dashboard.html
+
+# Linux
+xdg-open dashboard.html
+```
 
 ---
 
@@ -103,14 +164,18 @@ to Strategy B (AI-enhanced search) across 5 queries.
 
 To verify everything is working correctly:
 
-**Windows:**
-```
+**One-click:**
+```bash
+# Mac / Linux
+./run.sh --test
+
+# Windows
 run.bat --test
 ```
 
-**Mac / Linux:**
-```
-./run.sh --test
+**Or from terminal directly (venv must be activated):**
+```bash
+pytest tests/ -v
 ```
 
 Expected result: `91 passed` in a few seconds (the tests use a fast fake model,
@@ -146,7 +211,7 @@ not the real 1.4 GB one).
 ## What Happens Behind the Scenes
 
 ```
-run.bat / run.sh
+run.bat / run.sh   (or: python -m benchmark.runner)
     │
     ├── Creates a Python virtual environment (.venv folder)
     ├── Installs all packages from requirements.txt
@@ -156,7 +221,9 @@ run.bat / run.sh
             ├── Loads 10 GCP technical paragraphs
             ├── Runs 5 test queries × 5 retrieval strategies
             ├── Measures MRR, NDCG, Precision, Latency, Cosine Drift
-            └── Writes benchmark_results.json + retrieval_benchmark.md
+            ├── Writes benchmark_results.json
+            ├── Writes retrieval_benchmark.md
+            └── Writes dashboard.html  ← open this in your browser
 ```
 
 Total runtime after first run: approximately **60–90 seconds**.

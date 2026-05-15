@@ -56,24 +56,41 @@ docker compose run --rm rag-test
 
 ---
 
-### Method 4: Manual steps (Python 3.10+)
+### Method 4: Terminal step-by-step (Python 3.10+)
 
+**Mac / Linux:**
 ```bash
-# 1. Create and activate a virtual environment
-python -m venv .venv
-
-# Windows:
-.venv\Scripts\activate
-# Linux / macOS:
+cd path/to/rag-benchmark
+python3 -m venv .venv
 source .venv/bin/activate
-
-# 2. Install dependencies
 pip install -r requirements.txt
-
-# 3. Run the benchmark
 python -m benchmark.runner
+```
 
-# 4. Run tests
+**Windows (Command Prompt):**
+```cmd
+cd path\to\rag-benchmark
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python -m benchmark.runner
+```
+
+> The venv only needs to be created once. On subsequent runs, just activate and run:
+> ```bash
+> source .venv/bin/activate   # Mac/Linux  |  .venv\Scripts\activate  (Windows)
+> python -m benchmark.runner
+> ```
+
+Then open the dashboard:
+```bash
+open dashboard.html      # Mac
+start dashboard.html     # Windows
+xdg-open dashboard.html  # Linux
+```
+
+Run tests:
+```bash
 pytest tests/ -v
 ```
 
