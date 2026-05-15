@@ -1,0 +1,1082 @@
+[
+  {
+    "query_id": "q1",
+    "query_text": "How does the system handle peak load?",
+    "strategies": [
+      {
+        "name": "A",
+        "expansion_mode": null,
+        "expanded_query_text": null,
+        "chunks": [
+          {
+            "id": "chunk_5",
+            "score": 0.622754,
+            "relevance": 1,
+            "rank": 1
+          },
+          {
+            "id": "chunk_0",
+            "score": 0.61306,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_4",
+            "score": 0.606058,
+            "relevance": 1,
+            "rank": 3
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.577747,
+            "relevance": 2,
+            "rank": 4
+          },
+          {
+            "id": "chunk_2",
+            "score": 0.548242,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 0.648,
+        "p3": 1.0,
+        "latency_ms": 34.123,
+        "cosine_drift": null
+      },
+      {
+        "name": "B_good_expansion",
+        "expansion_mode": "good_expansion",
+        "expanded_query_text": "Cloud Run concurrency limits request queuing autoscaling thresholds horizontal scaling instance warm-up latency under high traffic volume load balancer distribution GKE cluster autoscaler node provisioning",
+        "chunks": [
+          {
+            "id": "chunk_8",
+            "score": 0.786648,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.769772,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_9",
+            "score": 0.769102,
+            "relevance": 2,
+            "rank": 3
+          },
+          {
+            "id": "chunk_0",
+            "score": 0.765045,
+            "relevance": 2,
+            "rank": 4
+          },
+          {
+            "id": "chunk_7",
+            "score": 0.740405,
+            "relevance": 1,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 1.0,
+        "latency_ms": 81.943,
+        "cosine_drift": 0.3738
+      },
+      {
+        "name": "B_noisy_expansion",
+        "expansion_mode": "noisy_expansion",
+        "expanded_query_text": "blockchain proof-of-work medieval history painting art sculpture cooking recipe dinner invitation completely unrelated content",
+        "chunks": [
+          {
+            "id": "chunk_4",
+            "score": 0.50052,
+            "relevance": 1,
+            "rank": 1
+          },
+          {
+            "id": "chunk_5",
+            "score": 0.491109,
+            "relevance": 1,
+            "rank": 2
+          },
+          {
+            "id": "chunk_7",
+            "score": 0.486273,
+            "relevance": 1,
+            "rank": 3
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.479006,
+            "relevance": 1,
+            "rank": 4
+          },
+          {
+            "id": "chunk_3",
+            "score": 0.474388,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 0.5,
+        "p3": 1.0,
+        "latency_ms": 75.046,
+        "cosine_drift": 0.608
+      },
+      {
+        "name": "B_null_expansion",
+        "expansion_mode": "null_expansion",
+        "expanded_query_text": "How does the system handle peak load?",
+        "chunks": [
+          {
+            "id": "chunk_5",
+            "score": 0.622754,
+            "relevance": 1,
+            "rank": 1
+          },
+          {
+            "id": "chunk_0",
+            "score": 0.61306,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_4",
+            "score": 0.606058,
+            "relevance": 1,
+            "rank": 3
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.577747,
+            "relevance": 2,
+            "rank": 4
+          },
+          {
+            "id": "chunk_2",
+            "score": 0.548242,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 0.648,
+        "p3": 1.0,
+        "latency_ms": 65.608,
+        "cosine_drift": 0.0
+      },
+      {
+        "name": "hybrid",
+        "expansion_mode": null,
+        "expanded_query_text": null,
+        "chunks": [
+          {
+            "id": "chunk_0",
+            "score": 0.032258,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.032018,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_5",
+            "score": 0.031545,
+            "relevance": 1,
+            "rank": 3
+          },
+          {
+            "id": "chunk_4",
+            "score": 0.031258,
+            "relevance": 1,
+            "rank": 4
+          },
+          {
+            "id": "chunk_7",
+            "score": 0.030579,
+            "relevance": 1,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 0.8827,
+        "p3": 1.0,
+        "latency_ms": 33.178,
+        "cosine_drift": null
+      }
+    ]
+  },
+  {
+    "query_id": "q2",
+    "query_text": "What are the cost implications of BigQuery slot reservations?",
+    "strategies": [
+      {
+        "name": "A",
+        "expansion_mode": null,
+        "expanded_query_text": null,
+        "chunks": [
+          {
+            "id": "chunk_3",
+            "score": 0.843482,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_2",
+            "score": 0.817694,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_0",
+            "score": 0.548873,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_7",
+            "score": 0.545396,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_8",
+            "score": 0.538566,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 36.278,
+        "cosine_drift": null
+      },
+      {
+        "name": "B_good_expansion",
+        "expansion_mode": "good_expansion",
+        "expanded_query_text": "BigQuery slot reservation flex slots capacity commitment annual three-year discount pricing on-demand versus committed use billing per-slot workload cost analysis reservation assignment organisation",
+        "chunks": [
+          {
+            "id": "chunk_3",
+            "score": 0.860699,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_2",
+            "score": 0.828054,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_5",
+            "score": 0.630989,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_7",
+            "score": 0.619538,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_9",
+            "score": 0.61573,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 82.084,
+        "cosine_drift": 0.1526
+      },
+      {
+        "name": "B_noisy_expansion",
+        "expansion_mode": "noisy_expansion",
+        "expanded_query_text": "economy inflation mortgage real-estate cooking recipe medieval history painting art sculpture music concert completely off topic",
+        "chunks": [
+          {
+            "id": "chunk_4",
+            "score": 0.41877,
+            "relevance": 0,
+            "rank": 1
+          },
+          {
+            "id": "chunk_5",
+            "score": 0.409941,
+            "relevance": 0,
+            "rank": 2
+          },
+          {
+            "id": "chunk_3",
+            "score": 0.409731,
+            "relevance": 2,
+            "rank": 3
+          },
+          {
+            "id": "chunk_2",
+            "score": 0.400178,
+            "relevance": 2,
+            "rank": 4
+          },
+          {
+            "id": "chunk_8",
+            "score": 0.398392,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 0.3333,
+        "ndcg": 0.3066,
+        "p3": 0.3333,
+        "latency_ms": 75.684,
+        "cosine_drift": 0.56
+      },
+      {
+        "name": "B_null_expansion",
+        "expansion_mode": "null_expansion",
+        "expanded_query_text": "What are the cost implications of BigQuery slot reservations?",
+        "chunks": [
+          {
+            "id": "chunk_3",
+            "score": 0.843482,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_2",
+            "score": 0.817694,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_0",
+            "score": 0.548873,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_7",
+            "score": 0.545396,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_8",
+            "score": 0.538566,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 72.317,
+        "cosine_drift": 0.0
+      },
+      {
+        "name": "hybrid",
+        "expansion_mode": null,
+        "expanded_query_text": null,
+        "chunks": [
+          {
+            "id": "chunk_3",
+            "score": 0.032522,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_2",
+            "score": 0.032522,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_0",
+            "score": 0.031025,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_8",
+            "score": 0.030769,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.03055,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 37.93,
+        "cosine_drift": null
+      }
+    ]
+  },
+  {
+    "query_id": "q3",
+    "query_text": "How does Vertex AI manage model serving latency?",
+    "strategies": [
+      {
+        "name": "A",
+        "expansion_mode": null,
+        "expanded_query_text": null,
+        "chunks": [
+          {
+            "id": "chunk_7",
+            "score": 0.823279,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.805992,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_8",
+            "score": 0.589752,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_9",
+            "score": 0.573373,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.563825,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 35.366,
+        "cosine_drift": null
+      },
+      {
+        "name": "B_good_expansion",
+        "expansion_mode": "good_expansion",
+        "expanded_query_text": "Vertex AI Online Prediction endpoint autoscaling GPU TPU accelerator replica inference latency SLO traffic splitting deployment model serving response time throughput warm-up cold start",
+        "chunks": [
+          {
+            "id": "chunk_7",
+            "score": 0.866596,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.82191,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_9",
+            "score": 0.662978,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_8",
+            "score": 0.654234,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.633171,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 83.031,
+        "cosine_drift": 0.2019
+      },
+      {
+        "name": "B_noisy_expansion",
+        "expansion_mode": "noisy_expansion",
+        "expanded_query_text": "sports tournament volleyball beach football match weather forecast agriculture irrigation gardening botany philosophy astronomy geology",
+        "chunks": [
+          {
+            "id": "chunk_2",
+            "score": 0.427912,
+            "relevance": 0,
+            "rank": 1
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.419372,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_5",
+            "score": 0.417856,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_4",
+            "score": 0.413379,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_3",
+            "score": 0.408704,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 0.5,
+        "ndcg": 0.3869,
+        "p3": 0.3333,
+        "latency_ms": 71.801,
+        "cosine_drift": 0.6053
+      },
+      {
+        "name": "B_null_expansion",
+        "expansion_mode": "null_expansion",
+        "expanded_query_text": "How does Vertex AI manage model serving latency?",
+        "chunks": [
+          {
+            "id": "chunk_7",
+            "score": 0.823279,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.805992,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_8",
+            "score": 0.589752,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_9",
+            "score": 0.573373,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.563825,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 70.56,
+        "cosine_drift": 0.0
+      },
+      {
+        "name": "hybrid",
+        "expansion_mode": null,
+        "expanded_query_text": null,
+        "chunks": [
+          {
+            "id": "chunk_7",
+            "score": 0.032522,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.032522,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_8",
+            "score": 0.031258,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.031258,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_9",
+            "score": 0.03125,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 34.239,
+        "cosine_drift": null
+      }
+    ]
+  },
+  {
+    "query_id": "q4",
+    "query_text": "Can a distributed system guarantee consistency, availability, and partition tolerance simultaneously?",
+    "strategies": [
+      {
+        "name": "A",
+        "expansion_mode": null,
+        "expanded_query_text": null,
+        "chunks": [
+          {
+            "id": "chunk_8",
+            "score": 0.592459,
+            "relevance": 0,
+            "rank": 1
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.591112,
+            "relevance": 0,
+            "rank": 2
+          },
+          {
+            "id": "chunk_7",
+            "score": 0.577671,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_9",
+            "score": 0.577325,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.568541,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "p3": 0.0,
+        "latency_ms": 35.924,
+        "cosine_drift": null
+      },
+      {
+        "name": "B_good_expansion",
+        "expansion_mode": "good_expansion",
+        "expanded_query_text": "CAP theorem distributed database trade-off consistency availability partition tolerance eventual strong linearizable Spanner Bigtable network partition distributed systems choice two-of-three",
+        "chunks": [
+          {
+            "id": "chunk_7",
+            "score": 0.661676,
+            "relevance": 0,
+            "rank": 1
+          },
+          {
+            "id": "chunk_8",
+            "score": 0.650261,
+            "relevance": 0,
+            "rank": 2
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.648191,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_9",
+            "score": 0.625779,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.61938,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "p3": 0.0,
+        "latency_ms": 81.273,
+        "cosine_drift": 0.1791
+      },
+      {
+        "name": "B_noisy_expansion",
+        "expansion_mode": "noisy_expansion",
+        "expanded_query_text": "hairstyle salon beauty appointment party planning event management cooking pastry baking medieval history poetry literature completely off domain and unrelated to distributed systems",
+        "chunks": [
+          {
+            "id": "chunk_2",
+            "score": 0.523692,
+            "relevance": 0,
+            "rank": 1
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.508032,
+            "relevance": 0,
+            "rank": 2
+          },
+          {
+            "id": "chunk_5",
+            "score": 0.503064,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_4",
+            "score": 0.498633,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_3",
+            "score": 0.495012,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "p3": 0.0,
+        "latency_ms": 79.436,
+        "cosine_drift": 0.4382
+      },
+      {
+        "name": "B_null_expansion",
+        "expansion_mode": "null_expansion",
+        "expanded_query_text": "Can a distributed system guarantee consistency, availability, and partition tolerance simultaneously?",
+        "chunks": [
+          {
+            "id": "chunk_8",
+            "score": 0.592459,
+            "relevance": 0,
+            "rank": 1
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.591112,
+            "relevance": 0,
+            "rank": 2
+          },
+          {
+            "id": "chunk_7",
+            "score": 0.577671,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_9",
+            "score": 0.577325,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.568541,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "p3": 0.0,
+        "latency_ms": 79.54,
+        "cosine_drift": 0.0
+      },
+      {
+        "name": "hybrid",
+        "expansion_mode": null,
+        "expanded_query_text": null,
+        "chunks": [
+          {
+            "id": "chunk_9",
+            "score": 0.031754,
+            "relevance": 0,
+            "rank": 1
+          },
+          {
+            "id": "chunk_3",
+            "score": 0.031545,
+            "relevance": 0,
+            "rank": 2
+          },
+          {
+            "id": "chunk_7",
+            "score": 0.031498,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_8",
+            "score": 0.030679,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.030622,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "p3": 0.0,
+        "latency_ms": 40.596,
+        "cosine_drift": null
+      }
+    ]
+  },
+  {
+    "query_id": "q5",
+    "query_text": "PubSub flow control",
+    "strategies": [
+      {
+        "name": "A",
+        "expansion_mode": null,
+        "expanded_query_text": null,
+        "chunks": [
+          {
+            "id": "chunk_4",
+            "score": 0.720607,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_5",
+            "score": 0.720546,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.601337,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_7",
+            "score": 0.59809,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.586883,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 33.56,
+        "cosine_drift": null
+      },
+      {
+        "name": "B_good_expansion",
+        "expansion_mode": "good_expansion",
+        "expanded_query_text": "Cloud Pub/Sub flow control MaxOutstandingMessages MaxOutstandingBytes subscriber backpressure lease management acknowledgement deadline message delivery throughput rate limiting push pull subscription",
+        "chunks": [
+          {
+            "id": "chunk_4",
+            "score": 0.870015,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_5",
+            "score": 0.848328,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_0",
+            "score": 0.648223,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.637201,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.589503,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 86.588,
+        "cosine_drift": 0.2281
+      },
+      {
+        "name": "B_noisy_expansion",
+        "expansion_mode": "noisy_expansion",
+        "expanded_query_text": "river dam irrigation agriculture gardening botany medieval history painting cooking recipe philosophy astronomy geology poetry literature",
+        "chunks": [
+          {
+            "id": "chunk_5",
+            "score": 0.436366,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_4",
+            "score": 0.425874,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_2",
+            "score": 0.396267,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.38131,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.38013,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 75.527,
+        "cosine_drift": 0.5466
+      },
+      {
+        "name": "B_null_expansion",
+        "expansion_mode": "null_expansion",
+        "expanded_query_text": "PubSub flow control",
+        "chunks": [
+          {
+            "id": "chunk_4",
+            "score": 0.720607,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_5",
+            "score": 0.720546,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_1",
+            "score": 0.601337,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_7",
+            "score": 0.59809,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.586883,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 67.449,
+        "cosine_drift": 0.0
+      },
+      {
+        "name": "hybrid",
+        "expansion_mode": null,
+        "expanded_query_text": null,
+        "chunks": [
+          {
+            "id": "chunk_4",
+            "score": 0.032522,
+            "relevance": 2,
+            "rank": 1
+          },
+          {
+            "id": "chunk_5",
+            "score": 0.032522,
+            "relevance": 2,
+            "rank": 2
+          },
+          {
+            "id": "chunk_0",
+            "score": 0.031025,
+            "relevance": 0,
+            "rank": 3
+          },
+          {
+            "id": "chunk_7",
+            "score": 0.03055,
+            "relevance": 0,
+            "rank": 4
+          },
+          {
+            "id": "chunk_6",
+            "score": 0.030536,
+            "relevance": 0,
+            "rank": 5
+          }
+        ],
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "p3": 0.6667,
+        "latency_ms": 33.964,
+        "cosine_drift": null
+      }
+    ]
+  }
+]

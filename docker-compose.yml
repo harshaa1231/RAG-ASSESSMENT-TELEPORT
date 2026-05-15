@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  rag-benchmark:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag-benchmark
+    volumes:
+      # Mount current directory so generated JSON/MD files appear locally
+      - .:/app
+    environment:
+      - HF_HOME=/root/.cache/huggingface
+      - PYTHONUNBUFFERED=1
+    command: python -m benchmark.runner
+
+  rag-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag-test
+    volumes:
+      - .:/app
+    environment:
+      - HF_HOME=/root/.cache/huggingface
+    command: pytest tests/ -v
+    profiles:
+      - test

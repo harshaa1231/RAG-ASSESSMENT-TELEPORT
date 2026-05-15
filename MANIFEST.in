@@ -1,0 +1,12 @@
+include config.yaml
+include requirements.txt
+include README.md
+include MIGRATION_GUIDE.md
+recursive-include benchmark *.py
+recursive-include core *.py
+recursive-include embeddings *.py
+recursive-include vector_store *.py
+recursive-include retrieval *.py
+recursive-include expansion *.py
+recursive-include mocks *.py
+recursive-include tests *.py

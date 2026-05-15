@@ -1,0 +1,20 @@
+embedding:
+  model_name: BAAI/bge-base-en-v1.5
+  dimension: 768
+
+vector_store:
+  type: faiss
+
+retrieval:
+  top_k: 5
+  latency_runs: 5
+
+strategy_b:
+  default_mode: good_expansion
+
+hybrid:
+  rrf_k: 60
+
+output:
+  results_json: benchmark_results.json
+  report_md: retrieval_benchmark.md
